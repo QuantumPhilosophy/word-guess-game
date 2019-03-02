@@ -17,3 +17,6 @@ This is a basic word guessing game based on the paper and pencil guessing game.
   * CSS 3
   * JavaScript
   * Bootstrap 4
+
+## Other
+Using `.gitkeep` to hold the empty `images` directory in GitHub.
