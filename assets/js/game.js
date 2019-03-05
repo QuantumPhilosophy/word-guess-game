@@ -1,6 +1,7 @@
 'use strict';
 
-let secretWords = ['calm', 'blackout', 'death', 'laconism', 'sulk', 'gag', 'mute', 'quash', 'squelch', 'dampen'];
+let secretWords = ['gag'];
+// let secretWords = ['calm', 'blackout', 'death', 'laconism', 'sulk', 'gag', 'mute', 'quash', 'squelch', 'dampen'];
 let currentWord = getRandomWord(secretWords);
 
 let gameBoardElement = document.getElementById('game-board');
@@ -31,10 +32,13 @@ document.onkeyup = function (event) {
         setupBoard(currentWord);
       }
     } else {
-      correctAnswerCount++;
-      const secretWordId = currentWord.indexOf(userInput);
-      const secretWordElement = document.getElementById(`${secretWordId}`);
-      secretWordElement.innerHTML = userInput;
+      for (let i = 0; i < currentWord.length; i++) {
+        if (userInput === currentWord[i]) {
+          correctAnswerCount++;
+          const secretWordElement = document.getElementById(`${i}`);
+          secretWordElement.innerHTML = userInput;
+        }
+      }
 
       if (correctAnswerCount === currentWord.length) {
         wins++;
