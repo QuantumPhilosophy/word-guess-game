@@ -1,7 +1,6 @@
 'use strict';
 
-let secretWords = ['gag'];
-// let secretWords = ['calm', 'blackout', 'death', 'laconism', 'sulk', 'gag', 'mute', 'quash', 'squelch', 'dampen'];
+let secretWords = ['calm', 'blackout', 'death', 'laconism', 'sulk', 'gag', 'mute', 'quash', 'squelch', 'dampen'];
 let currentWord = getRandomWord(secretWords);
 
 let gameBoardElement = document.getElementById('game-board');
