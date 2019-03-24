@@ -3,6 +3,9 @@
 ## Description
 This is a basic word guessing game based on the paper and pencil guessing game.
 
+### Production URL
+https://quantumphilosophy.github.io/word-guess-game/
+
 ### How to Play
   1. Press any key to get started!
   2. Wins: (# of times user guessed the word correctly).
@@ -13,10 +16,11 @@ This is a basic word guessing game based on the paper and pencil guessing game.
   7. After the user wins/loses the game will automatically choose another word and the player can begin again.
 
 ## Languages
-  * HTML 5
-  * CSS 3
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
   * JavaScript
   * Bootstrap 4
+  * CSS 3
+  * HTML 5
 
 ## Other
 Using `.gitkeep` to hold the empty `images` directory in GitHub.
